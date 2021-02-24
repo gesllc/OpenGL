@@ -2,6 +2,11 @@
 Working repository for Lynda.com Course \'Up &amp; Running with OpenGL\'
 ---------------------------------------------------------------
 
+### Also found stackoverflow recommendations for these tutorials  
+`http://www.arcsynthesis.org/gltut/`  
+`http://tomdalling.com/blog/category/modern-opengl/`  
+`http://www.codeincodeblock.com/2013/07/modern-opengl-32-tutorial-series-with.html`  
+
 ### Steps for installing CMake (from Instructor\'s transcript)
 - Get source code from `www.cmake.org/cmake/resources/software.html`  
 - Download Unix/Linux Source file `cmake-3.20.0-rc1.tar.gz`  
