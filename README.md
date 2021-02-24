@@ -17,3 +17,34 @@ Working repository for Lynda.com Course \'Up &amp; Running with OpenGL\'
 - `exit`
 - `which cmake` should show `/usr/local/bin/cmake`  
 
+### After all the above, cmake was available and would run OK, but could not build the project.
+- `cd ExerciseFiles`  
+- `mkdir Project`  
+- `cmake -G "Unix Makefiles" ..`  
+- The command above failed with error messages: 
+- Could not find a package configuration file provided by "Glew" with any of  
+- the following names:
+  
+- GlewConfig.cmake  
+- glew-config.cmake
+  
+- Add the installation prefix of "Glew" to CMAKE\_PREFIX\_PATH or set "Glew\_DIR"  
+- to a directory containing of the above files...   
+- However neither of those files exist in the ExerciseFiles directory structure.  
+
+### Appears Glew was not installed.
+- From `glew.sourceforge.net/build.html` installed requirements.  
+- As root, `yum install libXmu-devel libXi-devel libGL-devel dos2unix git wget`  
+- Downloaded source into repositories directory:
+- `git clone https://github.com/nigels-com/glew.git glew`  
+- Then from instructions from github README.md:  
+- `make extensions`  
+- FAILED - Installed python, then still needed to create link
+- `ln -s /usr/bin/python2.7 /usr/bin/python`  
+- `make extensions`  
+- `make`  
+- As root, `make install`  
+- 
+
+
+
