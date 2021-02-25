@@ -53,7 +53,8 @@ Working repository for Lynda.com Course \'Up &amp; Running with OpenGL\'
 ### Although the C8S steps above were promising, on Debian Buster followed instructions from Tom Dalling repo...
 - `git clone https://github.com/tomdalling/opengl-series.git`  
 - `su -`  
-- `apt-get install libglm-dev libglew-dev libglfw3-dev`  
+- `apt-get install libglm-dev libglew-dev libglfw3-dev`
+- `apt-get install cmake`    
 - `exit`  
 - `cd platforms/linux`  
 - `make`  
