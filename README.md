@@ -37,7 +37,7 @@ Working repository for Lynda.com Course \'Up &amp; Running with OpenGL\'
 - to a directory containing of the above files...   
 - However neither of those files exist in the ExerciseFiles directory structure.  
 
-### Appears Glew was not installed.
+### Appears Glew was not installed (Attempted on CentOS 8S).
 - From `glew.sourceforge.net/build.html` installed requirements.  
 - As root, `yum install libXmu-devel libXi-devel libGL-devel dos2unix git wget`  
 - Downloaded source into repositories directory:
@@ -49,7 +49,18 @@ Working repository for Lynda.com Course \'Up &amp; Running with OpenGL\'
 - `make extensions`  
 - `make`  
 - As root, `make install`  
-- 
+
+### Although the C8S steps above were promising, on Debian Buster followed instructions from Tom Dalling repo...
+- `git clone https://github.com/tomdalling/opengl-series.git`  
+- `su -`  
+- `apt-get install libglm-dev libglew-dev libglfw3-dev`  
+- `exit`  
+- `cd platforms/linux`  
+- `make`  
+- `cd ../../`  
+- `./source/01_project_skeleton/01_skeleton-debug`  
+- The command above opened a basic openGL window
+
 
 
 
